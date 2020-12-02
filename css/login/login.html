@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINDOWSHOP.COM</title>
+
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Font Awesome CDN 
+    <script src="https://kit.fontawesome.com/df3f20246d.js" crossorigin="anonymous"></script>-->
+
+    <!--slick slider-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<script>
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>
+<body>
+    
+    <!--header-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12">
+                    
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <h2 class="my-md-3 site-title text-white">WINDOWSHOP.COM</h2>
+                </div>
+                <div class="col-md-4 col-12 text-right">
+                    <p class="my-md-4 header-links">
+                        <a href="file:///C:/Users/Stuti/Desktop/Cars-Arena-master/login.html" class="px-2">Sign In</a>
+                        <a href="file:///C:/Users/Stuti/Desktop/Cars-Arena-master/register.html" class="px-1">Register</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="file:///C:/Users/Stuti/Desktop/Cars-Arena-master/index.html">HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          BRANDS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="./rolls.html">Levi's</a>
+                          <a class="dropdown-item" href="./ferrari.html">Van Heusen</a>
+                          <a class="dropdown-item" href="#">Park Avenue</a>
+                          <a class="dropdown-item" href="#">More</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          CATEGORIES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="./hatchback.html">Men</a>
+                          <a class="dropdown-item" href="./sedan.html">Women</a>
+                          <a class="dropdown-item" href="./suv.html">Kids</a>
+                          
+                        </div>
+                      </li>
+                      
+                    <li class="nav-item">
+                      <a class="nav-link" href="AboutUs.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">CONTACT US</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="navbar-nav">
+                    <li class="nav-item border rounded-circle mx-2 search-icon">
+                        <i class="fas fa-search p-2"></i>   
+                    </li>
+                    <li class="nav-item border rounded-circle mx-2 basket-icon">
+                        <i class="fas fa-shopping-basket p-2"></i>   
+                    </li>
+                </div>
+              </nav>   
+        </div>
+    </header>
+</body>
+<body>
+
+<body>  
+<form name="myform" method="post" action="file:///C:/Users/Stuti/Desktop/Cars-Arena-master/index.html" onsubmit="return validateform()" >  
+Enter your UserID<br><input type="text" name="name"><br/>  
+Enter your Password<br><input type="password" name="password"><br/>
+<br>  
+<input type="submit" value="register">  
+</form>  
+</body>
+
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--<script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>-->
+</html>
