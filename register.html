@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINDOWSHOP.COM</title>
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/df3f20246d.js" crossorigin="anonymous"></script>
+    <!--slick slider-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--<link rel="stylesheet" href="./css/register.css">-->
+	<script src="D:\xampp\htdocs\WP-master\js"></script>
+</head>
+<body>
+    
+    <!--header-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12">
+                    
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <h2 class="my-md-3 site-title text-white">WINDOWSHOP.COM</h2>
+                </div>
+                <div class="col-md-4 col-12 text-right">
+                    <p class="my-md-4 header-links">
+                        <a href="/WP-master/login.html" class="px-2">Sign In</a>
+                        <a href="/WP-master/register.html" class="px-1">Register</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/WP-master/index.html">HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          BRANDS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="/WP-master/levis.php">Levi's</a>
+                          <a class="dropdown-item" href="#">Van Heusen</a>
+                          <a class="dropdown-item" href="#">Park Avenue</a>                         
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          CATEGORIES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="/WP-master/men.html">Men</a>
+                          <a class="dropdown-item" href="/WP-master/women.html">Women</a>
+                          <a class="dropdown-item" href="/WP-master/kids.html">Kids</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/WP-master/Offers.html">OFFERS</a>
+                    </li>  
+					<li class="nav-item">
+                      <a class="nav-link" href="/WP-master/Cart.html">CART</a>
+                    </li>  
+                    <li class="nav-item">
+                      <a class="nav-link" href="/WP-master/AboutUs.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/WP-master/contactus.html">CONTACT US</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>   
+        </div>
+    </header>
+    
+	</body>
+	
+	<body onload="document.registration.userid.focus();">
+	<h1>Registration Form</h1>
+	<form name='registration' onSubmit="return formValidation();">
+	<ul style="list-style: none;">
+		<li><label for="userid">Enter User ID</label></li>
+		<li><input type="text" name="userid" size="12" /></li>
+		<li><label for="passid">Enter Password</label></li>
+		<li><input type="password" name="passid" size="12" /></li>
+		<li><label for="username">Enter Full Name</label></li>
+		<li><input type="text" name="username" size="50" /></li>
+		<li><label for="address">Enter your address</label></li>
+		<li><input type="text" name="address" size="50" /></li>
+		<li><label for="country">Please select your City</label></li>
+		<li><select name="country">
+			<option selected="" value="Default">(Please select a city)</option>
+			<option value="Chennai">Chennai</option>
+			<option value="Mumbai">Mumbai</option>
+			<option value="Bangalore">Bangalore</option>
+			<option value="Delhi">Delhi</option>
+			<option value="Kolkata">Kolkata</option>
+		</select></li>
+		<li><label for="zip">Enter your ZIP Code</label></li>
+		<li><input type="text" name="zip" /></li>
+		<li><label for="email">Enter your Email ID</label></li>
+		<li><input type="text" name="email" size="50" /></li>
+		<li><label id="gender">Select your gender</label></li>
+		<li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+		<li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+		<li><label>Would you like to subscribe to us?</label></li>
+		<li><input type="checkbox" name="en" value="en" checked /><span>Yes</span></li>
+		<li><input type="checkbox" name="nonen" value="noen" /><span>No</span></li>
+		<li><label for="desc">Enter Comments (if any)</label></li>
+		<li><textarea name="desc" id="desc"></textarea></li>
+		<li><input type="submit" name="submit" value="Submit" /></li>
+	</ul>
+	</form>
+	</body>
+
+<!--/feature section -->
+    <hr color="lightblue">
+    </main>
+
+    <footer>
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h4>Contact Us</h4>
+                    <div class="row pl-md-1 text-secondary">
+                        <div class="col-12">
+                            <i class="fas fa-home px-md-2"></i>
+                            <small>C.P. Ramaswamy Road, Mylapore, Chennai-600004</small>
+                        </div>
+                    </div>
+                    <div class="row pl-md-1 text secondary py-4">
+                        <div class="col-12">
+                            <i class="fas fa-paper-plane px-md-2"></i>
+                            <small>www.windowshop.com</small>
+                        </div>
+                    </div>
+                    <div class="row pl-md-1 text-secondary">
+                        <div class="col-12">
+                            <i class="fas fa-phone-volume px-md-2"></i>
+                            <small>7811923331</small>
+                        </div>
+                    </div>
+					<!--
+                    <div class="row social text-secondary">
+                        <div class="col-12 py-3">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fab fa-skype"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <h4>Our Locations</h4>
+                    <div class="d-flex flex-column pl-md-3">
+                        <small class="pt-0">Chennai</small>
+                        <small>New Delhi</small>
+                        <small>Bangalore</small>
+                        <small>Mumbai</small>
+                        <small>Kolkata</small>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <h4>Our Pages</h4>
+                    <div class="d-flex flex-column pl-md-3">
+                        <small class="pt-0">About Store</small>
+                        <small>New Collection</small>
+                        <small>Contact Us</small>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <p class="pt-5">
+                <img src="./assets/payment.png" alt="payment" class="img-fluid">
+            </p>
+            <small class="text-secondary py-4">Windowshop.com © 2020 Online Shopping Store. All Rights Reversed. Designed by Stuti Arora.</small>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+</html>

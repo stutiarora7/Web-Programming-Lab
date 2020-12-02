@@ -1,0 +1,34 @@
+<?xml version = "1.0"?> 
+<?xml-stylesheet type = "text/xsl" href="product.xsl"?> 
+<class>
+<product prodID = "1">
+	<prodName>Full Sleves T-Shirt</prodName>
+	<prodPrice>2000</prodPrice>
+	<discPerc>5</discPerc>
+	<finalPrice>1900</finalPrice>
+</product>
+<product prodID = "2">
+	<prodName>Black Jeans</prodName>
+	<prodPrice>3000</prodPrice>
+	<discPerc>10</discPerc>
+	<finalPrice>2700</finalPrice>
+</product>
+<product prodID = "3">
+	<prodName>Collar Shirt Plain</prodName>
+	<prodPrice>1500</prodPrice>
+	<discPerc>5</discPerc>
+	<finalPrice>1425</finalPrice>
+</product>
+<product prodID = "4">
+	<prodName>Full Length Dress</prodName>
+	<prodPrice>2700</prodPrice>
+	<discPerc>5</discPerc>
+	<finalPrice>2565</finalPrice>
+</product>
+<product prodID = "5">
+	<prodName>Frilled Skirt</prodName>
+	<prodPrice>2000</prodPrice>
+	<discPerc>10</discPerc>
+	<finalPrice>1800</finalPrice>
+</product>
+</class>
